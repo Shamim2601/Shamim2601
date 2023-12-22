@@ -1,7 +1,7 @@
-### Shamim Al Mamun
-# Student ID: 1805060
-# Department: CSE
-# Bangladesh University of Engineering and Technology (BUET)
+# Shamim Al Mamun
+### Student ID: 1805060
+### Department: CSE
+## Bangladesh University of Engineering and Technology (BUET)
 
 <!--
 **Shamim2601/Shamim2601** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
