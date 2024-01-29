@@ -344,8 +344,8 @@ main {
   margin-bottom: 10px;
 }
 
-.info-content .title {
-  color: var(--white-1);
+.info-content .cv {
+  color: yellow;
   background: var(--onyx);
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
