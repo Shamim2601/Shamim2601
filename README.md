@@ -24,13 +24,13 @@
 
 
 ### Programming Languages:
-![C](https://img.shields.io/badge/-C-00599C?logo=c&logoColor=white) ![C++](https://img.shields.io/badge/-C++-darkgreen?logo=c%2B%2B&logoColor=white) ![Java](https://img.shields.io/badge/-Java-ed1c16?logo=java&logoColor=white) ![TypeScript](https://img.shields.io/badge/-TypeScript-000000?logo=typescript&logoColor=white) ![Python](https://img.shields.io/badge/-Python-purple?logo=python&logoColor=white) ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black) ![Assembly](https://img.shields.io/badge/-Assembly-blue?logo=intel&logoColor=black)
+![C](https://img.shields.io/badge/-C-00599C?logo=c&logoColor=white) ![C++](https://img.shields.io/badge/-C++-darkgreen?logo=c%2B%2B&logoColor=white) ![Java](https://img.shields.io/badge/-Java-ed1c16?logo=java&logoColor=white) ![Python](https://img.shields.io/badge/-Python-purple?logo=python&logoColor=white) ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black) ![Assembly](https://img.shields.io/badge/-Assembly-blue?logo=intel&logoColor=black)
 
 ### Frameworks:
-
+![Express JS](https://img.shields.io/badge/-Express%20JS-000000?logo=express&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/-Spring%20Boot-6DB33F?logo=spring&logoColor=white) 
 ![fastAPI](https://img.shields.io/badge/-fast%20API-teal?logo=fastapi&logoColor=white)
-![Angular](https://img.shields.io/badge/-Angular-DD0031?logo=angular&logoColor=white) ![Express JS](https://img.shields.io/badge/-Express%20JS-000000?logo=express&logoColor=white)
+![Angular](https://img.shields.io/badge/-Angular-DD0031?logo=angular&logoColor=white) 
 
 ### Database:
 ![Oracle](https://img.shields.io/badge/-Oracle%20PL/SQL-white?logo=oracle&logoColor=red)
@@ -47,13 +47,8 @@
 ### UI/UX:
 ![Figma](https://img.shields.io/badge/-Figma-green?logo=figma&logoColor=black)
 
-
-
 ### Micro-controller:
 ![Arduino](https://img.shields.io/badge/-Arduino-00979D?logo=arduino&logoColor=white)
-
-### Game Engine:
-![Godot](https://img.shields.io/badge/-Godot-478CBF?logo=godot-engine&logoColor=white)
 
 ### Documenting:
 ![Latex](https://img.shields.io/badge/-LaTeX-008080?logo=latex&logoColor=white)
