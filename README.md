@@ -1,60 +1,30 @@
-<!-- ## Languages
-![C++](https://img.shields.io/badge/-C++-000000?style=flat&logo=c%2B%2B)
-![Java](https://img.shields.io/badge/-Java-000000?style=flat&logo=java)
-![Python](https://img.shields.io/badge/-Python-000000?style=flat&logo=python)
-![JavaScript](https://img.shields.io/badge/-JavaScript-000000?style=flat&logo=javascript)
-![SQL](https://img.shields.io/badge/-SQL-000000?style=flat&logo=mysql)
-
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=NahianShabab&show_icons=true&theme=tokyonight)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=NahianShabab&layout=compact&langs_count=7)   -->
-
-# Hi, I'm Shamim Al-Mamun
-
-## I'm Interested in:
-- Full Stack Software Development
-- Machine Learning
-
-## My Skills:
-
-### Machine Learning
-[![PyTorch Version](https://img.shields.io/badge/PyTorch-blue)](https://pytorch.org/)
-[![Pandas Version](https://img.shields.io/badge/Pandas-brightgreen)](https://pandas.pydata.org/)
-[![NumPy Version](https://img.shields.io/badge/NumPy-orange)](https://numpy.org/)
+## Hi, I'm Shamim Al-Mamun 👋
+[<img src='https://github.com/Shamim2601/Shamim2601/blob/master/assets/images/shamim_300px_circle.jpg'>](https://shamim2601.netlify.app/)
+<p>
+👑 I am Software Engineer and Web Developer <br> 
+🖊️ Love to design systems and write code <br> 
+🎤 Like to share my knowledge </p> 
 
 
+<p align="left"> <a href="https://twitter.com/shovoalways" target="blank"><img src="https://img.shields.io/twitter/follow/shovoalways?logo=twitter&style=for-the-badge" alt="shovoalways" /></a> </p>
 
-### Programming Languages:
-![C](https://img.shields.io/badge/-C-00599C?logo=c&logoColor=white) ![C++](https://img.shields.io/badge/-C++-darkgreen?logo=c%2B%2B&logoColor=white) ![Java](https://img.shields.io/badge/-Java-ed1c16?logo=java&logoColor=white) ![Python](https://img.shields.io/badge/-Python-purple?logo=python&logoColor=white) ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black) ![Assembly](https://img.shields.io/badge/-Assembly-blue?logo=intel&logoColor=black)
+## 🚀 About Me
+I’m a Front End Web developer passionate about making error-free websites with 100% client satisfaction. I am passionate about learning and sharing my knowledge with others as publicly as possible. I love to solve real-world problems. I am strategic and goal-oriented, and I always work with an end goal in mind. Over the past years, I created 100s of websites for my clients. I pride myself on doing quality work and maintaining excellent communication. Most of the time I work with WordPress but some technologies I enjoy working with include ReactJS, JavaScript as well as PHP. 
 
-### Frameworks:
-![Express JS](https://img.shields.io/badge/-Express%20JS-000000?logo=express&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/-Spring%20Boot-6DB33F?logo=spring&logoColor=white) 
-![fastAPI](https://img.shields.io/badge/-fast%20API-teal?logo=fastapi&logoColor=white)
-![Angular](https://img.shields.io/badge/-Angular-DD0031?logo=angular&logoColor=white) 
+## 👨‍💻 Skills & Experiance: 
+✅ WordPress <br> 
+✅ JavaScript <br>
+✅ PHP <br>
+✅ HTML5 / CSS3 / SASS / Bootstrap <br>
+✅ Photoshop / Illustrator <br>
 
-### Database:
-![Oracle](https://img.shields.io/badge/-Oracle%20PL/SQL-white?logo=oracle&logoColor=red)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=shovoalways&layout=compact)
 
-### Version Control:
-![Git](https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white)
 
-### IDE/Code Editors:
-![Intellij IDEA](https://img.shields.io/badge/-Intellij%20IDEA-524f81?logo=intellij-idea&logoColor=white) ![Visual Studio Code](https://img.shields.io/badge/-VS%20Code-007ACC?logo=visual-studio-code&logoColor=white)
-
-### API Testing:
-![Postman](https://img.shields.io/badge/-Postman-orange?logo=postman&logoColor=white)
-
-### UI/UX:
-![Figma](https://img.shields.io/badge/-Figma-green?logo=figma&logoColor=black)
-
-### Micro-controller:
-![Arduino](https://img.shields.io/badge/-Arduino-00979D?logo=arduino&logoColor=white)
-
-### Documenting:
-![Latex](https://img.shields.io/badge/-LaTeX-008080?logo=latex&logoColor=white)
+## ☕ Connect with me!
+[<img src='https://github.com/shovoalways/shovoalways/blob/main/img/facebook.png?raw=true' alt='facebook' height='40'>](https://www.facebook.com/shovoalways)  [<img src='https://github.com/shovoalways/shovoalways/blob/main/img/instagram.png?raw=true' alt='instagram' height='40'>](https://www.instagram.com/shovoalways/)  [<img src='https://github.com/shovoalways/shovoalways/blob/main/img/twitter.png?raw=true' alt='twitter' height='40'>](https://twitter.com/shovoalways)  [<img src='https://github.com/shovoalways/shovoalways/blob/main/img/youtube.png?raw=true' alt='YouTube' height='40'>](https://www.youtube.com/@ProcoderBD)  [<img src='https://github.com/shovoalways/shovoalways/blob/main/img/linkedin.png?raw=true' alt='linkedin' height='40'>](https://www.linkedin.com/in/shovoalways/)  
 
 
 
-
-
-
+## 📧 For Business Inquiries 
+✅  ► shovoalways@gmail.com
