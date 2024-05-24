@@ -1,5 +1,5 @@
 ## Hi, I'm Shamim Al-Mamun 👋
-[<img src='https://github.com/Shamim2601/Shamim2601/blob/master/assets/images/shamim_300px_circle.jpg'>](https://shamim2601.netlify.app/)
+[<h3>Click Here to view my Portfolio website</h3>](https://shamim2601.netlify.app/)
 <p>
 👑 I am Software Engineer and Web Developer <br> 
 🖊️ Love to design systems and write code <br> 
