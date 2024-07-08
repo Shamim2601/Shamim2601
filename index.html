@@ -87,47 +87,25 @@
 </button>
         </figure>
 
-
-
 <!-- The Modal -->
 <div id="myModal" class="modal">
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close" onclick="closeModal()">&times;</span>
-    <img id="modalImage" src="assets/images/20240708_153736.jpg" alt="Image" style="max-width: 100%; max-height: 100%;">
-    <audio id="modalAudio" controls autoplay loop>
-      <source src="assets/snoring_e51013134872397.mp3" type="audio/mpeg">
-    </audio>
+    <img src="assets/images/20240708_153736.jpg" alt="Image" style="width: 100%;">
   </div>
 </div>
 
 <script>
-  // Function to display the modal and show the image and play audio
+  // Function to display the modal and show the image
   function showPopup() {
     var modal = document.getElementById("myModal");
-    var modalImage = document.getElementById("modalImage");
-    var modalAudio = document.getElementById("modalAudio");
-
-    // Set image source and audio source
-    modalImage.src = "assets/images/20240708_153736.jpg"; // Change this to your image path
-    modalAudio.src = "assets/snoring_e51013134872397.mp3"; // Change this to your audio path
-
-    // Play audio (autoplay)
-    modalAudio.play();
-
-    // Show the modal
     modal.style.display = "block";
   }
 
   // Function to close the modal
   function closeModal() {
     var modal = document.getElementById("myModal");
-    var modalAudio = document.getElementById("modalAudio");
-
-    // Pause audio
-    modalAudio.pause();
-
-    // Hide the modal
     modal.style.display = "none";
   }
 </script>
