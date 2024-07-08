@@ -93,10 +93,10 @@
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close" onclick="closeModal()">&times;</span>
-    <img id="modalImage" src="assets/images/20240708_153736.jpg" alt="Image" style="max-width: 100%; max-height: 100%;">
-    <audio id="modalAudio" controls autoplay loop>
+    <img id="modalImage" src="assets/images/shamim_300px_circle.jpg" alt="Image" style="max-width: 100%; max-height: 100%;">
+<!--     <audio id="modalAudio" controls autoplay loop>
       <source src="assets/snoring_e51013134872397.mp3" type="audio/mpeg">
-    </audio>
+    </audio> -->
   </div>
 </div>
 
@@ -105,14 +105,14 @@
   function showPopup() {
     var modal = document.getElementById("myModal");
     var modalImage = document.getElementById("modalImage");
-    var modalAudio = document.getElementById("modalAudio");
+    // var modalAudio = document.getElementById("modalAudio");
 
     // Set image source and audio source
-    modalImage.src = "assets/images/20240708_153736.jpg"; // Change this to your image path
-    modalAudio.src = "assets/snoring_e51013134872397.mp3"; // Change this to your audio path
+    modalImage.src = "assets/images/shamim_300px_circle.jpg"; // Change this to your image path
+    // modalAudio.src = "assets/snoring_e51013134872397.mp3"; // Change this to your audio path
 
     // Play audio (autoplay)
-    modalAudio.play();
+    // modalAudio.play();
 
     // Show the modal
     modal.style.display = "block";
@@ -124,7 +124,7 @@
     var modalAudio = document.getElementById("modalAudio");
 
     // Pause audio
-    modalAudio.pause();
+    // modalAudio.pause();
 
     // Hide the modal
     modal.style.display = "none";
