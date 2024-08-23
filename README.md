@@ -35,7 +35,7 @@ I'm driven by curiosity, constantly exploring new technologies and participating
 ## 👨‍💻 Projects
 ✅ Project 1: [Institutional Library](https://github.com/Shamim2601/Institutional-Library) - Express | Oracle <br>
 ✅ Project 2: [Disaster Shield](https://github.com/Shamim2601/disaster-shield-backend) - FastAPI | AngularJS | PostgreSQL <br>
-✅ Project 2: [QTutor](https://github.com/Shamim2601/qtutor) - Express | MongoDB <br>
+✅ Project 2: [Vitti360](https://www.vitti360.xyz/) - Express | MongoDB <br>
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Shamim2601&layout=compact)
 
