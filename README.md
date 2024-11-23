@@ -36,8 +36,8 @@ I'm driven by curiosity, constantly exploring new technologies and participating
 - Assisted in troubleshooting and debugging issues in production environments.
 
 ## 👨‍💻 Skills: 
+✅ Python | Django <br> 
 ✅ NodeJS | Express <br> 
-✅ Spring Boot <br>
 ✅ ReactJS <br>
 ✅ C | C++ | Java | Python <br>
 ✅ HTML5 / CSS3 / Bootstrap / JavaScript <br>
