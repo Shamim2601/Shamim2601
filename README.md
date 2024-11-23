@@ -15,8 +15,18 @@ I'm driven by curiosity, constantly exploring new technologies and participating
 
 ## 💼 Experience
 
+### 👨‍💻 Apploye | Junior Software Engineer
+- **Duration:** [September 2024] - [Current]
+- **Location:** [Onsite]
+
+#### Responsibilities:
+- Develop and maintain Front End [ReactJS].
+- Collaborated with cross-functional teams to design and implement software solutions.
+- Participated in code reviews and contributed to the improvement of development processes.
+- Assisted in troubleshooting and debugging issues in production environments.
+
 ### 👨‍💻 Peytosoft | Trainee Backend Developer
-- **Duration:** [April 2024] - [Current]
+- **Duration:** [April 2024] - [August 2024]
 - **Location:** [Remote]
 
 #### Responsibilities:
