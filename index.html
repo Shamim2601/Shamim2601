@@ -2,1144 +2,801 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shamim Al-Mamun</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Shamim | Portfolio</title>
+  <meta content="Portfolio website - Shamim Al Mamun, CSE, BUET-18" name="description">
+  <meta content="shamim2601" name="keywords">
 
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <style>
-    /* Styles for modal */
-    .modal {
-      display: none; /* Hidden by default */
-      position: fixed; /* Stay in place */
-      z-index: 1; /* Sit on top */
-      left: 0;
-      top: 0;
-      width: 100%; /* Full width */
-      height: 100%; /* Full height */
-      overflow: auto; /* Enable scroll if needed */
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-    }
-    .modal-content {
-      margin: auto;
-      display: block;
-      width: 80%;
-      max-width: 800px;
-      max-height: 80%;
-    }
-    .close {
-      position: absolute;
-      top: 15px;
-      right: 35px;
-      color: #f1f1f1;
-      font-size: 40px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-    .close:hover,
-    .close:focus {
-      color: #bbb;
-      text-decoration: none;
-      cursor: pointer;
-    }
-  </style>
-  
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
-<body>
+<body class="index-page">
 
-  <!--
-    - #MAIN
-  -->
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
 
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-                  <button onclick="showPopup()">
-  <img src="assets/images/shamim_300px_circle.jpg" alt="shamim" width="80">
-</button>
-        </figure>
-
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <img id="modalImage" src="assets/images/shamim_300px_circle.jpg" alt="Image" style="max-width: 100%; max-height: 100%;">
-<!--     <audio id="modalAudio" controls autoplay loop>
-      <source src="assets/snoring_e51013134872397.mp3" type="audio/mpeg">
-    </audio> -->
-  </div>
-</div>
-
-<script>
-  // Function to display the modal and show the image and play audio
-  function showPopup() {
-    var modal = document.getElementById("myModal");
-    var modalImage = document.getElementById("modalImage");
-    // var modalAudio = document.getElementById("modalAudio");
-
-    // Set image source and audio source
-    modalImage.src = "assets/images/shamim_300px_circle.jpg"; // Change this to your image path
-    // modalAudio.src = "assets/snoring_e51013134872397.mp3"; // Change this to your audio path
-
-    // Play audio (autoplay)
-    // modalAudio.play();
-
-    // Show the modal
-    modal.style.display = "block";
-  }
-
-  // Function to close the modal
-  function closeModal() {
-    var modal = document.getElementById("myModal");
-    var modalAudio = document.getElementById("modalAudio");
-
-    // Pause audio
-    // modalAudio.pause();
-
-    // Hide the modal
-    modal.style.display = "none";
-  }
-</script>
-
-
-        <div class="info-content">
-          <h1 class="name" title="Shamim Al-Mamun">Shamim Al-Mamun</h1>
-
-<!--           <p class="title">CSE, BUET</p> -->
-
-          <a class="title" href="assets/pdf/Resume_Shamim_Al_Mamun.pdf">View CV</a>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:shamim2601@gmail.com" class="contact-link">shamim2601@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+8801703902176" class="contact-link">+880 1703-902176</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="2000-05-27">May 27, 2000</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Dhaka, Bangladesh</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://facebook.com/samamun60" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://twitter.com/shamim2601" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/shamim2601" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <!--li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-        </li-->
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I'm a final-year undergraduate student majoring in Computer Science
-            at Bangladesh University of Engineering and Technology, having successfully
-            completed my earlier studies at Rajshahi Cadet College.
-          </p>
-          <p>
-            I am deeply passionate about leveraging technology to solve complex problems
-            and build systems that have positive impact on real life.
-            I am eager to apply my analytical skills, collaborate with teams, and
-            contribute to innovative solutions in the field of software development.
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
-
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <!--li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
-                </p>
-              </div>
-
-          </li-->
-
-            <!--li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
-
-                <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
-                </p>
-              </div>
-
-          </li-->
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-teaching.svg" alt="teaching icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Educational Content Creating</h4>
-
-                <p class="service-item-text">
-                  I love teaching, so I create contents for students to help them understand the concepts better.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/" alt="" width="150" height="60"
-                    data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title></h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <!--p>
-                    Shamim is a dynamic and youthful web designer and developer known for his meticulous attention to
-                    detail. Driven by a strong sense of purpose, he is attuned to customer needs and committed to
-                    achieving his goals. With a punctual and dedicated work ethic, Shamim consistently fulfills his
-                    responsibilities. His empathetic nature and strong sense of responsibility make him an ideal team
-                    member.
-                </p-->
-                </div>
-
-              </div>
-            </li>
-
-            <!--li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-          </li-->
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/" alt="" width="150" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title></h4>
-
-<!--               <time datetime="2023-08-14">March 04, 2024</time> -->
-
-              <div data-modal-text>
-                <!--p>
-                  Shamim is a dynamic and youthful web designer and developer known for his meticulous attention to
-                  detail. Driven by a strong sense of purpose, he is attuned to customer needs and committed to
-                  achieving his goals. With a punctual and dedicated work ethic, Shamim consistently fulfills his
-                  responsibilities. His empathetic nature and strong sense of responsibility make him an ideal team
-                  player.
-              </p-->
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <!--ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-        </ul-->
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title"> Bangladesh University of Engineering Technology (BUET)</h4>
-
-              <span>2019 — 2024</span>
-
-              <p class="timeline-text">
-                Department of Computer Science and Engineering.
-                Undergrad Thesis topic: 'Quantitative Analysis of Knee-Osteoarthritis X-ray images'.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Rajshahi Cadet College</h4>
-
-              <span>2012 — 2018</span>
-
-              <p class="timeline-text">
-                Secondary and Higher-Secondary Education.
-                House Prefect.
-                Rajshahi Board Topper in HSC-2018.
-              </p>
-
-            </li>
-
-            <!--li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
-
-              <span>2002 — 2004</span>
-
-              <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
-              </p>
-
-          </li-->
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Machine Learning Intern</h4>
-
-              <span>March, 2022 — April, 2022</span>
-
-              <p class="timeline-text">
-                Business Data analytics using Natural Language Processing. </p>
-
-            </li>
-
-            <!--li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Art director</h4>
-
-              <span>2013 — 2015</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web designer</h4>
-
-              <span>2010 — 2013</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-          </li-->
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web development</h5>
-                <data value="80">60%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 60%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Computer Networking</h5>
-                <data value="70">40%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 40%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Computer Security </h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
-                <data value="90">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Others</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Others</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://youtu.be/xyHqYxpxUPA?si=ieOEeoi-wgNZm6Ku">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.png" alt="disasterShield" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Disaster Shield</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://youtu.be/83IYeILf178?si=JZIlfi2KOdQ2Nwwl">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="insLib" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Institutional Library</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <!--li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-          </li-->
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="https://shamim2601.blogspot.com">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blogger_logo.png" alt="blogger logo" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">My Blogs</p>
-
-                    <span class="dot"></span>
-
-                    <!--time datetime="2022-02-23">Feb 23, 2022</time-->
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Diary of Dreams</h3>
-
-                  <p class="blog-text">
-                    A place where I express my thoughts and ideas through written canvas.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <!--li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Feb 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-          </li-->
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <!--section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-      </section-->
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
     </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Shamim Al Mamun</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://www.linkedin.com/in/shamim2601/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="https://shamim2601.blogspot.com/" class="blog"><i class="bi bi-pencil-square"></i></a>
+      <a href="https://www.kaggle.com/shamim2601" class="kaggle"><i class="bi bi-graph-up"></i></a>
+      <a href="https://leetcode.com/u/shamim2601/" class="leetcode"><i class="bi bi-terminal"></i></a>
+      <a href="https://github.com/Shamim2601" class="github"><i class="bi bi-github"></i></a>
+
+      <a href="https://www.facebook.com/samamun60" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.youtube.com/@samamun60" class="youtube"><i class="bi bi-youtube"></i></a>
+      <a href="https://x.com/shamim2601" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="https://join.skype.com/invite/q9MI3qmxJySM" class="google-plus"><i class="bi bi-skype"></i></a>
+      <a href="https://wa.me/+8801703902176" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Documents</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="assets/documents/Resume_Shamim-Al-Mamun _CSE-BUET.pdf">Resume</a></li>
+            <li class="dropdown"><a href="#"><span>Awards</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="assets/documents/Poster_1805048_60.pdf">BUET RISE Research Award</a></li>
+                <li><a href="assets/documents/Outstanding_Scholar_Award_Shamim_Al_Mamum.pdf">Bestowers Foundation outstanding scholar award</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#"><span>Certificates</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="assets/documents/PXL_20230618_124610359.jpg">Machine Learning Internship at Era InfoTech</a></li>
+                <li><a href="https://www.linkedin.com/learning/certificates/38a9fbf87306e4ce658e141a8504469003889490485f9333a67c195e5240888d">Software Career Development LinkedIn Learning</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#"><span>Others</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Miscellaneous</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Shamim</h2>
+        <h2>Al Mamun</h2>
+        <p>I'm <span class="typed" data-typed-items="Developer, Learner, Researcher, Teacher">Software Engineer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>
+          Experienced software engineer with a strong foundation in frontend and backend development using frameworks like ReactJS, Express, and Django.<br>
+          Skilled in building scalable applications, designing user-friendly interfaces, and collaborating in dynamic team environments.<br>
+          Passionate about problem-solving, technology, and contributing to community initiatives.
+        </p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="Profile Image">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Graduate Software Engineer</h2>
+            <p class="fst-italic py-3">
+              I am a driven software engineer with a passion for developing efficient solutions to complex challenges and contributing to impactful projects.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>27 May 2000</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span><a href="https://shamim2601.netlify.app/" target="_blank">shamim2601.netlify.app</a></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+880 1703 902176</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Dhaka, Bangladesh</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>24</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor’s</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span><a href="mailto:shamim2601@gmail.com">shamim2601@gmail.com</a></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Consultancy:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+            <p class="py-3">
+              I have worked with diverse teams, developing integrations, scalable applications, and user-friendly designs. My academic foundation from BUET and real-world experiences in software engineering have equipped me with a problem-solving mindset and a drive to learn continuously. Outside work, I am dedicated to community service, such as establishing a public library in my village.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Happy Clients</strong> <span>from various projects</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Projects</strong> <span>completed successfully</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="120" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hours Of Support</strong> <span>provided to clients</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Team Members</strong> <span>collaborated with</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>A comprehensive skill set with proficiency in modern programming languages, frameworks, and tools, enabling scalable application development and effective problem-solving.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>HTML</span> <i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>JavaScript</span> <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>ReactJS</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>NodeJS/Express</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Python/Django</span> <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Database (Postgres/Oracle/MongoDB)</span> <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Git & Linux</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>Experienced and detail-oriented software engineer with expertise in frontend and backend development. Adept at problem-solving, delivering scalable solutions, and collaborating in team environments. Passionate about creating impactful projects and driving community initiatives.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <!-- Summary and Education -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Summary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>Shamim Al-Mamun</h4>
+              <p><em>Graduate software engineer with strong expertise in ReactJS, ExpressJS, and Django, and experience developing and optimizing scalable web applications. Skilled in integrating modern frameworks and collaborating in dynamic team settings to achieve project goals.</em></p>
+              <ul>
+                <li>BUET, Dhaka-1000, Bangladesh</li>
+                <li>+880 1703 902176</li>
+                <li>shamim2601@gmail.com</li>
+              </ul>
+            </div><!-- End Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>B.Sc. in Computer Science and Engineering</h4>
+              <h5>2019 - 2024</h5>
+              <p><em>Bangladesh University of Engineering and Technology (BUET), Dhaka</em></p>
+              <ul>
+                <li>CGPA: 3.57</li>
+                <li>Dean’s List (2019-2020)</li>
+                <li>RISE Research Award for undergrad thesis</li>
+              </ul>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item">
+              <h4>Secondary and Higher Secondary Education</h4>
+              <h5>2012 - 2018</h5>
+              <p><em>Rajshahi Cadet College, Rajshahi</em></p>
+              <ul>
+                <li>Board Topper, HSC (2018)</li>
+                <li>Participant in Sakura Science Program, SSHSP, JST (2016)</li>
+                <li>House Prefect, Green House (2017)</li>
+              </ul>
+            </div><!-- End Resume Item -->
+          </div><!-- End Left Column -->
+
+          <!-- Professional Experience -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Junior Software Engineer</h4>
+              <h5>Sep 2024 - Present</h5>
+              <p><em>Apploye Ltd, Dhaka</em></p>
+              <ul>
+                <li>Developed and maintained features in the frontend using ReactJS and Styled Components.</li>
+                <li>Improved user experience by fixing bugs and optimizing application performance.</li>
+                <li>Collaborated effectively in an agile team using Git for version control.</li>
+              </ul>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item">
+              <h4>React Developer</h4>
+              <h5>Mar 2024 - Aug 2024</h5>
+              <p><em>Peytosoft, Ontario, Canada (Remote)</em></p>
+              <ul>
+                <li>Designed and developed user-facing pages and components using ReactJS, Bootstrap, and Material-UI.</li>
+                <li>Enhanced responsiveness and accessibility of web applications.</li>
+                <li>Collaborated remotely with a distributed team to deliver high-quality solutions.</li>
+              </ul>
+            </div><!-- End Resume Item -->
+
+            <h3 class="resume-title">Community Involvement</h3>
+            <div class="resume-item">
+              <ul>
+                <li>Established a public library in my village to foster education and literacy.</li>
+                <li>Served as a District Ambassador for Ankur Foundation, promoting social initiatives.</li>
+              </ul>
+            </div><!-- End Resume Item -->
+          </div><!-- End Right Column -->
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>A curated selection of academic, professional, and personal projects highlighting expertise in ReactJS, Express, Django, and scalable application development.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-academic">Academic Projects</li>
+            <li data-filter=".filter-professional">Professional Projects</li>
+            <li data-filter=".filter-personal">Personal Projects</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <!-- DisasterShield Project -->
+            <div class="col-lg-12 portfolio-item isotope-item filter-academic">
+              <h4>DisasterShield</h4>
+              <p>An academic project for disaster management using AngularJS and FastAPI.</p>
+              <ul>
+                <li>Implemented workflows, testing, and deployment processes.</li>
+                <li>Developed a scalable and responsive interface.</li>
+              </ul>
+              <p><strong>Details:</strong> <a href="https://youtu.be/xyHqYxpxUPA?si=ieOEeoi-wgNZm6Ku" target="_blank">View Demo</a></p>
+            </div><!-- End DisasterShield Project -->
+
+            <!-- Vitti360 Project -->
+            <div class="col-lg-12 portfolio-item isotope-item filter-professional">
+              <h4>Vitti360</h4>
+              <p>A professional LMS project developed using ReactJS and Django with a focus on user experience and responsive design.</p>
+              <ul>
+                <li>Implemented interactive and immersive technologies.</li>
+              </ul>
+              <p><strong>Details:</strong> <a href="https://www.vitti360.xyz/" target="_blank">Visit Project</a></p>
+            </div><!-- End Vitti360 Project -->
+
+            <!-- JMMS Project -->
+            <div class="col-lg-12 portfolio-item isotope-item filter-professional">
+              <h4>JMMS (Scholarship Management)</h4>
+              <p>A React-based application designed for managing scholarship registrations and distributions.</p>
+              <ul>
+                <li>Built using ReactJS, Bootstrap 5, and NodeJS.</li>
+                <li>Streamlined registration processes with an intuitive UI.</li>
+              </ul>
+              <p><strong>Details:</strong> <a href="https://jmms.vercel.app/" target="_blank">Visit Project</a></p>
+            </div><!-- End JMMS Project -->
+
+            <!-- Institutional Library Project -->
+            <div class="col-lg-12 portfolio-item isotope-item filter-academic">
+              <h4>Institutional Library</h4>
+              <p>An academic library management system developed with ExpressJS, Bootstrap, and OracleDB.</p>
+              <ul>
+                <li>Optimized database queries for improved performance.</li>
+              </ul>
+              <p><strong>Details:</strong> <a href="https://youtu.be/83IYeILf178?si=JZIlfi2KOdQ2Nwwl" target="_blank">View Demo</a></p>
+            </div><!-- End Institutional Library Project -->
+
+            <!-- Sorboraho Project -->
+            <div class="col-lg-12 portfolio-item isotope-item filter-personal">
+              <h4>Sorboraho</h4>
+              <p>A personal e-commerce platform developed using ReactJS and hosted on Vercel.</p>
+              <ul>
+                <li>Features a minimalist design with seamless navigation.</li>
+              </ul>
+              <p><strong>Details:</strong> <a href="https://sorboraho.vercel.app/" target="_blank">Visit Project</a></p>
+            </div><!-- End Sorboraho Project -->
+
+            <!-- Public Library Initiative -->
+            <div class="col-lg-12 portfolio-item isotope-item filter-personal">
+              <h4>Public Library Initiative</h4>
+              <p>An initiative to establish a community library in my village to promote literacy and education.</p>
+              <ul>
+                <li>Collaborated with local organizations for funding and resource collection.</li>
+                <li>Organized workshops and managed library operations.</li>
+              </ul>
+              <p><strong>Details:</strong> <a href="https://shamim2601.github.io/bagg/" target="_blank">Visit Project</a></p>
+            </div><!-- End Public Library Initiative -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>With a solid foundation in software development and a passion for problem-solving, I offer services tailored to creating efficient, scalable, and user-friendly solutions for businesses and individuals.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <!-- Frontend Development -->
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="bi bi-window-sidebar"></i></div>
+            <div>
+              <h4 class="title"><a href="#" class="stretched-link">Frontend Development</a></h4>
+              <p class="description">Developing responsive and interactive user interfaces using ReactJS, Bootstrap, and Material-UI to enhance user experience.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <!-- Backend Development -->
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon flex-shrink-0"><i class="bi bi-server"></i></div>
+            <div>
+              <h4 class="title"><a href="#" class="stretched-link">Backend Development</a></h4>
+              <p class="description">Building secure and scalable backend solutions using ExpressJS, Django, and FastAPI with efficient database integrations like MongoDB and PostgreSQL.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <!-- Full Stack Development -->
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon flex-shrink-0"><i class="bi bi-layers"></i></div>
+            <div>
+              <h4 class="title"><a href="#" class="stretched-link">Full Stack Development</a></h4>
+              <p class="description">Offering end-to-end development of web applications, combining modern frontend frameworks and robust backend technologies for seamless performance.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <!-- Application Optimization -->
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon flex-shrink-0"><i class="bi bi-speedometer2"></i></div>
+            <div>
+              <h4 class="title"><a href="#" class="stretched-link">Application Optimization</a></h4>
+              <p class="description">Enhancing performance, debugging, and streamlining code to ensure high-quality, efficient applications that meet business goals.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <!-- Database Design and Management -->
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon flex-shrink-0"><i class="bi bi-database"></i></div>
+            <div>
+              <h4 class="title"><a href="#" class="stretched-link">Database Design & Management</a></h4>
+              <p class="description">Designing and maintaining databases for secure, reliable, and fast data management using OracleDB, PostgreSQL, and MongoDB.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <!-- Community Contributions -->
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+            <div class="icon flex-shrink-0"><i class="bi bi-people"></i></div>
+            <div>
+              <h4 class="title"><a href="#" class="stretched-link">Community Projects</a></h4>
+              <p class="description">Leveraging technical expertise to contribute to community initiatives, including public libraries and local projects that drive social impact.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>Hear from respected professionals and mentors who have collaborated with me on projects and academic work.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <!-- Testimonial 1: Anamul Kabir -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>“Shamim’s technical expertise, combined with his leadership qualities, played a significant role in the success of our projects. His problem-solving abilities are exceptional, and he is always proactive in seeking solutions.”</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/anamul.jpg" class="testimonial-img" alt="Anamul Kabir">
+                <h3>Anamul Kabir</h3>
+                <h4>Founder and CEO, Peytosoft</h4>
+              </div>
+            </div><!-- End Testimonial 1 -->
+
+            <!-- Testimonial 2: Sheikh Shourav -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>“Shamim demonstrated remarkable technical skills during our collaboration. He is highly dependable and always delivers high-quality work. His ability to handle challenges with creativity and confidence makes him an asset to any team.”</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/shourav.jpg" class="testimonial-img" alt="Sheikh Shourav">
+                <h3>Sheikh Shourav</h3>
+                <h4>CEO, Apploye Ltd</h4>
+              </div>
+            </div><!-- End Testimonial 2 -->
+
+            <!-- Testimonial 3: Dr. Mahmuda Naznin -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>“Shamim is an outstanding student and researcher. His diligence, curiosity, and problem-solving skills were key in the successful completion of his thesis. His contributions to the academic community are commendable.”</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/dr-naznin.jpg" class="testimonial-img" alt="Dr. Mahmuda Naznin">
+                <h3>Dr. Mahmuda Naznin</h3>
+                <h4>Professor, CSE, BUET</h4>
+              </div>
+            </div><!-- End Testimonial 3 -->
+
+            <!-- Testimonial 4: Reza Nabi -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>“Shamim’s passion for technology and his positive attitude have always inspired me. He’s a motivated individual with great potential for success. It has been a pleasure to witness his growth, and I believe he will continue to excel.”</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/reza.jpg" class="testimonial-img" alt="Reza Nabi">
+                <h3>Reza Nabi</h3>
+                <h4>Officer, USPTO</h4>
+              </div>
+            </div><!-- End Testimonial 4 -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me for collaboration, inquiries, or just a conversation about technology, economics, or any of my ongoing projects!</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Dhaka, Bangladesh-1210</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Me</h3>
+                  <a href="tel:+8801703902176"><p>+8801703902176</p></a>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Me</h3>
+                  <a href="mailto:shamim2601@gmail.com"><p>shamim2601@gmail.com</p></a>
+                </div>
+              </div><!-- End Info Item -->
+
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1565.01652854695!2d90.39245195162503!3d23.749606250425977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8bd6b79be0d%3A0x2632c35312f66ea0!2sSonargaon%20Road%2C%20Dhaka%201205!5e0!3m2!1sen!2sbd!4v1736664631555!5m2!1sen!2sbd" 
+                width="100%" 
+                height="270" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <!-- <div class="col-lg-7">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div> -->
+
+        </div>
+
+      </div>
+
+    </section>
+
 
   </main>
 
+  <footer id="footer" class="footer position-relative light-background">
 
+    <div class="container">
+      <!-- <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
+      </div> -->
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
 
+  </footer>
 
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+  <!-- Preloader -->
+  <div id="preloader"></div>
 
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
 
